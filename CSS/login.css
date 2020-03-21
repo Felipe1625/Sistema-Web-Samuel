@@ -3,6 +3,7 @@
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
      transition: 0.3s;
      padding: 30px;
+     background-color: white;
    }
    
    /* On mouse-over, add a deeper shadow */
@@ -19,4 +20,8 @@
 
 input{
      margin-bottom: 30px;
+}
+
+.fondo_gris{
+     background-color: rgb(250, 250, 250);
 }

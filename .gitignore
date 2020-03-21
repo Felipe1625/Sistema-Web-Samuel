@@ -1,0 +1,2 @@
+#archivo gitignore para omitir archivos al usar git
+.ini

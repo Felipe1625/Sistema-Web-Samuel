@@ -1,0 +1,14 @@
+.footerh
+{
+    margin-top:50px;
+    background-image: url('../Images/abstract.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    
+}
+
+.texto_derecha
+{
+    text-align: right;
+}

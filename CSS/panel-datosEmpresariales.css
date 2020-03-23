@@ -1,0 +1,27 @@
+.centrar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .col-3>div:hover{
+        background-color: rgb(144, 217, 223);
+   }
+   .col-3>div{
+        padding: 5px;
+        font-size: small;
+   }
+
+   .item-activo {
+     background-color: rgb(103, 174, 180) !important;
+   }
+
+   a {
+     text-decoration: none !important;
+     color: black !important;
+   }
+
+
+.remove-all-margin-padding{
+     margin:0 ! important;
+     }

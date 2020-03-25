@@ -11,6 +11,16 @@ html
 }
 
 
+.carta {
+    /* margin: 30px; */
+    padding: 30px;
+    background-color: white;
+  }
+
+.fondo-gris{
+    background-color: rgb(241, 241, 241);
+}
+
 .centrar
 {
     display: flex;

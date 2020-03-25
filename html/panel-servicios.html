@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="../css/panel.css">
+  <link rel="stylesheet" href="../css/footer-panel.css.css">
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navegador-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item centrar mr-2">
+          Nombre
+        </li>
+        <li class="nav-item">
+          <img src="../Images/boss.png" alt="">
+        </li>
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit">One page</button>
+        <a href="#"><i class="far fa-times-circle fa-2x x-red"></i></a>
+
+      </form>
+    </div>
+  </nav>
+
+  <div class="container mt-2">
+
+    <div class="row">
+      <div class="col-3">
+        <div><a href="../html/panel-datosPersonales.html"><i class="fas fa-user-circle"></i> Datos personales</a></div>
+        <div><a href="../html/panel-datosEmpresariales.html"><i class="fas fa-briefcase"></i> Datos empresariales</a>
+        </div>
+        <div class="item-activo"><a href="../html/panel-servicios.html"><i class="fas fa-briefcase"></i>Servicios</a>
+        </div>
+        <div><a href="#"><i class="fas fa-cogs"></i> Config. OnePage</a></div>
+        <div><a href="../html/faq_clientes.html"><i class="fas fa-briefcase"></i>Preguntas frecuentes</a></div>
+      </div>
+      <div class="col-9">
+
+        <h3>Listado de servicios</h3>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-agregar-servicio">Agregar un
+          servicio</button>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <button class="chat rounded-circle" data-toggle="modal" data-target="#modal-contacto">
+    <i class="far fa-comments fa-2x"></i>
+  </button>
+
+  <!-- Modal contacto-->
+  <div class="modal fade" id="modal-contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header titulo-modal ">
+          <i class="far fa-comments centrar-vertical mr-2"></i>
+          <h5 class="modal-title" id="exampleModalLongTitle">Formulario de contacto</h5>
+          <button type="button" class="close centrar-vertical" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times" style="color: white;"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Ingrese sus dudas y consultas"></textarea>
+          <div class="alert alert-primary mt-3" role="alert">
+            Recuerde visitar la seccion de <a href="#">preguntas frecuentes</a>.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal agregar servicio-->
+  <div class="modal fade" id="modal-agregar-servicio" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header titulo-modal ">
+          <i class="far fa-clipboard centrar-vertical mr-2"></i>
+          <h5 class="modal-title" id="exampleModalLongTitle">Agregar servicio</h5>
+          <button type="button" class="close centrar-vertical" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times" style="color: white;"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Username"
+            aria-describedby="basic-addon1">
+          <div class="input-group mt-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Seleccionar tipo</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>...</option>
+              <option value="1">Informatica</option>
+              <option value="2">Hoteleria</option>
+              <option value="3">Pasteleria</option>
+            </select>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Ingrese descripcion del producto o servicio"></textarea>
+          </div>
+          <label class="radio-inline ml-2"><input type="radio" name="optradio" checked>Servicio</label>
+          <label class="radio-inline"><input type="radio" name="optradio">Producto</label>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Archivos JS -->
+  <script type="text/javascript" src="../JS/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

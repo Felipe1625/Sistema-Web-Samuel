@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto Chile | Resultados búsqueda</title>
-    <meta name="author" content="Samuel Gajardo Vergara">    
+    <meta name="author" content="Samuel Gajardo Vergara">
     <meta name="keywords" content="pyme,buscador de pymes,pymes,chile,trabajo">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -12,120 +13,161 @@
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
 
 </head>
+
 <body class="fondo-gris">
     <!-- Navegador-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html"><img src="../Images/0.png" alt=""></a>
 
         <div class="input-group mb-1 ancho">
-          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          <div class="input-group-append" >
-            <a href="../html/resultados_busqueda.html">
-              <button type="button" class="btn btn-dark">Buscar</button>
-            </a>
-          </div>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+                <a href="../html/resultados_busqueda.html">
+                    <button type="button" class="btn btn-dark">Buscar</button>
+                </a>
+            </div>
         </div>
 
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+            <ul class="navbar-nav">
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Categorías</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categorías</a>
+                </li>
 
-              <li class="nav-item mr-5">
-                <a class="nav-link" href="../html/login.html">Entrar</a>
-              </li>
-          </ul>
-          
-        </div>
-      </nav>
-
-     <div class="container">
-<div class="row">
-    <div class= "col-3 todos_los_filtros text-left"> <!-- Inicio de los filtros -->
-        <div class="filtro">
-            <br>
-                <span><b>Filtrar por rubro </b></span>
-                <ul>
-                <br>
-
-                <li ><input type="checkbox" value="Informática"> 
-                    <label>Informática</label>
+                <li class="nav-item mr-5">
+                    <a class="nav-link" href="../html/login.html">Entrar</a>
                 </li>
-                <li ><input type="checkbox" value="Hotelería"> 
-                    <label>Hotelería</label>
-                </li>
-                <li ><input type="checkbox" value="Panadería"> 
-                    <label>Panadería</label>
-                </li>
-                <li ><input type="checkbox" value="Restaurant"> 
-                    <label>Restaurant</label>
-                </li>
-        
-                </ul>
-            </div>
-            
-            <div class="filtro">
-                <br>
-                <span><b>Filtrar por tipo </b></span>
-                <ul>
-                <br>
-    
-                <li ><input type="checkbox" value="Servicio"> 
-                    <label>Servicio</label>
-                </li>
-                <li ><input type="checkbox" value="Producto"> 
-                    <label>Producto</label>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="filtro">
-                <br>
-                <span><b>Filtrar por precio </b></span>
-                <ul>
-                <br>
-    
-                <li ><input type="checkbox" value="Rango 1"> 
-                    <label>$0 - $50.000</label>
-                </li>
-                <li ><input type="checkbox" value="Rango 2"> 
-                    <label>$50.000 - $100.000</label>
-                    </li>
-                    <li ><input type="checkbox" value="Rango 3"> 
-                        <label>$100.000 - $300.000</label>
-                    </li>
-                    <li ><input type="checkbox" value="Rango 4"> 
-                        <label>$300.000 - $500.000</label>
-                    </li>
-                    <li ><input type="checkbox" value="Rango 5"> 
-                        <label>$500.000 - $1.000.000</label>
-                    </li>
-                    <li ><input type="checkbox" value="Rango 6"> 
-                        <label>$1.000.000 o más</label>
-                    </li>
-                </ul>
-            </div>
-        </div> <!-- fin de los filtros-->
-
-        <div class="col-9 carta mt-4 mb-4 ">
+            </ul>
 
         </div>
-</div>
-     
+    </nav>
 
-        
+    <div class="container">
+        <div class="row">
+            <div class="col-3 todos_los_filtros text-left">
+                <!-- Inicio de los filtros -->
+                <div class="filtro">
+                    <br>
+                    <span><b>Filtrar por rubro </b></span>
+                    <ul>
+                        <br>
+
+                        <li><input type="checkbox" value="Informática">
+                            <label>Informática</label>
+                        </li>
+                        <li><input type="checkbox" value="Hotelería">
+                            <label>Hotelería</label>
+                        </li>
+                        <li><input type="checkbox" value="Panadería">
+                            <label>Panadería</label>
+                        </li>
+                        <li><input type="checkbox" value="Restaurant">
+                            <label>Restaurant</label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="filtro">
+                    <br>
+                    <span><b>Filtrar por tipo </b></span>
+                    <ul>
+                        <br>
+
+                        <li><input type="checkbox" value="Servicio">
+                            <label>Servicio</label>
+                        </li>
+                        <li><input type="checkbox" value="Producto">
+                            <label>Producto</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filtro">
+                    <br>
+                    <span><b>Filtrar por precio </b></span>
+                    <ul>
+                        <br>
+
+                        <li><input type="checkbox" value="Rango 1">
+                            <label>$0 - $50.000</label>
+                        </li>
+                        <li><input type="checkbox" value="Rango 2">
+                            <label>$50.000 - $100.000</label>
+                        </li>
+                        <li><input type="checkbox" value="Rango 3">
+                            <label>$100.000 - $300.000</label>
+                        </li>
+                        <li><input type="checkbox" value="Rango 4">
+                            <label>$300.000 - $500.000</label>
+                        </li>
+                        <li><input type="checkbox" value="Rango 5">
+                            <label>$500.000 - $1.000.000</label>
+                        </li>
+                        <li><input type="checkbox" value="Rango 6">
+                            <label>$1.000.000 o más</label>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- fin de los filtros-->
+
+            <div class="col-9 mt-5 mb-4 ">
+                <div class="carta">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Servicio</h5>
+                            <h5>Empresa</h5>
+                            <button type="button" class="btn btn-success">Detalle</button>
+                        </div>
+                        <div class="col-4 imagen-en-carta">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Servicio</h5>
+                            <h5>Empresa</h5>
+                            <button type="button" class="btn btn-success">Detalle</button>
+                        </div>
+                        <div class="col-4 imagen-en-carta">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Servicio</h5>
+                            <h5>Empresa</h5>
+                            <button type="button" class="btn btn-success">Detalle</button>
+                        </div>
+                        <div class="col-4 imagen-en-carta">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </div>
     <!-- Archivos JS -->
     <script type="text/javascript" src="JS/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="Bootstrap/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

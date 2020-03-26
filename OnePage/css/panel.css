@@ -1,0 +1,68 @@
+.x-red {
+  color: red;
+}
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-3>div:hover{
+     background-color: rgb(144, 217, 223);
+}
+.col-3>div{
+     padding: 5px;
+     font-size: small;
+}
+
+.chat{
+  position: fixed;
+  background: transparent;
+  border-style: solid;
+  bottom: 40px;
+  right: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: cadetblue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  outline: none !important; 
+  transition: all 0.5s;
+  transition-property: width,height,bottom,right;
+}
+
+.chat:hover{
+width: 100px;
+height: 100px;
+bottom: 20px;
+right: 20px;
+}
+
+.titulo-modal{
+  background-color: cornflowerblue;
+  color: white;
+}
+
+
+.centrar-vertical{
+  display: flex !important;
+  align-self: center !important;
+}
+
+/* .preguntas-frecuentes{
+  transition: color 1s !important;
+}
+
+.preguntas-frecuentes:hover{
+  color: red !important;
+} */
+
+
+
+

@@ -25,3 +25,7 @@
 .remove-all-margin-padding{
      margin:0 ! important;
      }
+
+     body{
+          background-color: rgb(241, 241, 241) !important;
+      }

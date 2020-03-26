@@ -20,3 +20,7 @@
      text-decoration: none !important;
      color: black !important;
    }
+
+   body{
+    background-color: rgb(241, 241, 241) !important;
+}

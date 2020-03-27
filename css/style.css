@@ -50,7 +50,7 @@ background-color: white;
   .carta-forma-pago {
     /* transition: 0.3s; */
     padding: 12px;
-    background-color: white;
+    background-color: white !important;
   }
 
   

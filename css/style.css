@@ -174,6 +174,23 @@ body{
     .ocultar-imagen{
         display: none
     }
+   
+        .ocultar-imagen-nosotros{
+            display: none !important;
+        }
+}
+
+@media only screen and (max-width: 1250px) {
+    .imagen-nosotros-centrar{
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    }
+
+    .size-imagen{
+        width: 550px !important;
+       
+    }
     /* .remove-all-margin-padding{
         margin:20px ! important;
         padding: 20px !important;
@@ -181,7 +198,6 @@ body{
 
         } */
 }
-
 
 .icono-circular{
     /* border-radius: 200px 200px 200px 200px;
@@ -215,6 +231,12 @@ color: #3483fa;
     margin-left: 0px !important;
 }
 
+/* .imagen-circular{
+    border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
 
+} */
 
 

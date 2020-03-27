@@ -165,12 +165,12 @@ body{
     .ocultar-imagen{
         display: none
     }
-    .remove-all-margin-padding{
+    /* .remove-all-margin-padding{
         margin:20px ! important;
         padding: 20px !important;
         display: inline;
 
-        }
+        } */
 }
 
 

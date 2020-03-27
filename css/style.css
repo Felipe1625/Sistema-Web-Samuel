@@ -101,6 +101,7 @@ border-bottom:  0.08px solid rgb(207, 206, 206);
 
 body{
     background-color: rgb(241, 241, 241) !important;
+    overflow-x: hidden !important;
 }
 
 .azul{
@@ -133,10 +134,10 @@ body{
     align-items: center;
 }
 
-.margen_seccion
+/* .margen_seccion
 {
     margin-bottom: 70px;
-}
+} */
 
 
 @media only screen and (min-width: 1600px) {
@@ -238,5 +239,26 @@ color: #3483fa;
 border: 0px solid #000000;
 
 } */
+.ancho-banner{
+    height: 350px !important;
+    width: 100% !important;
+}
 
 
+.remove-margin-container{
+    margin-left:0px ! important;
+    margin-right: 0px !important;
+    padding: 0px !important;
+}
+
+.size-container{
+    width: 100%;
+}
+
+.flex-1{
+    display: flex;
+}
+
+.size-input{
+    width: 100% !important;
+}

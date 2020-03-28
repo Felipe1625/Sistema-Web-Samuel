@@ -179,6 +179,9 @@ body{
             display: none !important;
         }
 
+        .centrar-list{
+            text-align: center;
+        }
       
 }
 

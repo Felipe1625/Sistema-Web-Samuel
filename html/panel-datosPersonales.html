@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/panel-datosPersonales.css">
-  <link rel="stylesheet" href="../css/footer-panel.css.css">
+  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
   <!--font awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -18,8 +19,8 @@
 
 <body>
   <!-- Navegador-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Logo</a>
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(167, 167, 167);">
+    <a class="nav-item mr-3" style="color: white !important" href="#">Empresa</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,62 +28,99 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item centrar mr-2">
-          Nombre
+        <li class="nav-item" style="color: white !important">
+          Usuario
         </li>
-        <li class="nav-item">
-          <img src="../Images/boss.png" alt="">
-        </li>
-
-
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit">One page</button>
-        <a href="#"><i class="far fa-times-circle fa-2x x-red"></i></a>
+        <a  href="../OnePage/index.html">
+          <button class="btn btn-info my-2 my-sm-0 mr-3" type="button">One page</button>
+        </a>
+        <a href="../index.html" style="color: white !important">Salir</a>
         
       </form>
     </div>
   </nav>
 
+  
+
+
+
+
   <div class="container mt-2">
 
-    <div class="row">
-      <div class="col-3">
-        <div class="item-activo"><a href="../html/panel-datosPersonales.html"><i class="fas fa-user-circle"></i> Datos personales</a></div>
-        <div><a href="../html/panel-datosEmpresariales.html" ><i class="fas fa-briefcase"></i> Datos empresariales</a></div>
-        <div><a href="../html/panel-servicios.html" ><i class="fas fa-briefcase"></i>Servicios</a></div>
-        <div><a href="#" ><i class="fas fa-cogs"></i> Config. OnePage</a></div>
-        <div><a href="../html/faq_clientes.html" ><i class="fas fa-briefcase"></i>Preguntas frecuentes</a></div>
+    <div class="row carta-panel">
+      <div class="col-3 linea-divisoria ocultar-imagen mb-3">
+        
+        <div class="hover-seleccion">
+          <p class="titulo-filtros">Panel de control</p>
+          <div class="mt-1">
+              <span><a class="letra-filtros" href="panel-datosPersonales.html"><i class="fas fa-user-circle mr-2"></i>Datos personales</a></span>
+          </div>
+          <div class="mt-1">
+              <span><a class="letra-filtros" href="panel-datosEmpresariales.html" ><i class="fas fa-briefcase mr-2"></i>Datos empresariales</a></span>
+          </div>    
+          <div class="mt-1">
+            <span><a class="letra-filtros" href="panel-servicios.html" ><i class="fas fa-clipboard-list mr-2"></i> Servicios</a></span>
+        </div> 
+        
+
+        <div class="mt-1">
+          <span><a class="letra-filtros" href="#" ><i class="fas fa-cogs mr-2"></i>Config. OnePage</a></span>
+      </div> 
+      <div class="mt-1">
+        <span><a class="letra-filtros" href="faq_clientes.html" ><i class="fas fa-question-circle mr-2" ></i>Preguntas frecuentes</a></span>
+    </div>    
+      </div>
       </div>
       <div class="col-9">
-          <h3>Datos Personales</h3>
-          <div class="row mt-3">
-               <div class="col-3">Nombre</div>
-               <div class="col-6">Nombre de prueba</div>
-               <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
-          </div>
-          <div class="row mt-3">
-               <div class="col-3">Nombre de usuario</div>
-               <div class="col-6">Usuario de prueba</div>
-               <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
-          </div>
-          <div class="row mt-3">
-               <div class="col-3">Empresa asociada</div>
-               <div class="col-6">Empresa de prueba</div>
-               <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
-          </div>
-          <div class="row mt-3">
-               <div class="col-3">Correo electronico</div>
-               <div class="col-6">correo@prueba.cl</div>
-               <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
-          </div>
+        <h3>Datos Personales</h3>
+        <div class="row mt-3">
+             <div class="col-3">Nombre</div>
+             <div class="col-6">Nombre de prueba</div>
+             <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
+        </div>
+        <div class="row mt-3">
+             <div class="col-3">Nombre de usuario</div>
+             <div class="col-6">Usuario de prueba</div>
+             <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
+        </div>
+        <div class="row mt-3">
+             <div class="col-3">Empresa asociada</div>
+             <div class="col-6">Empresa de prueba</div>
+             <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
+        </div>
+        <div class="row mt-3">
+             <div class="col-3">Correo electronico</div>
+             <div class="col-6">correo@prueba.cl</div>
+             <div class="col-2"><button type="button" class="btn btn-info">Editar</button></div>
+        </div>
 
-      </div>
+    </div>
     </div>
 
   </div>
 
 
+
+<!-- pie de pagina -->
+<footer class="footer-panel">
+  <div class="row">
+    <div class="col-md-6 col-lg-7">
+
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 centrar margen-icono-footer">
+      <i class="fab fa-facebook-f fa-2x  icono-footer-circular-face"></i>
+      <i class="fab fa-twitter fa-2x  icono-footer-circular-tw"></i>
+      <i class="fab fa-instagram fa-2x  icono-footer-circular-insta"></i>
+      <i class="fab fa-snapchat-ghost fa-2x icono-footer-circular-snapchat"></i>
+    </div>
+  </div>
+</footer>
+
+<button class="chat rounded-circle" data-toggle="modal" data-target="#modal-contacto">
+  <i class="far fa-comments fa-2x"></i>
+</button>
 
   <!-- Archivos JS -->
   <script type="text/javascript" src="../JS/jquery-3.4.1.min.js"></script>

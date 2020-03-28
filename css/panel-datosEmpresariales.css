@@ -4,9 +4,9 @@
      align-items: center;
    }
    
-   .col-3>div:hover{
+   /* .col-3>div:hover{
         background-color: rgb(144, 217, 223);
-   }
+   } */
    .col-3>div{
         padding: 5px;
         font-size: small;
@@ -28,4 +28,43 @@
 
      body{
           background-color: rgb(241, 241, 241) !important;
+          overflow-x: hidden !important;
+          width:100%;
       }
+
+      .chat{
+          position: fixed;
+          background: transparent;
+          border-style: solid;
+          bottom: 40px;
+          right: 40px;
+          width: 70px;
+          height: 70px;
+          bottom: 60px;
+          background-color: cadetblue;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          outline: none !important; 
+          transition: all 0.5s;
+          transition-property: width,height,bottom,right;
+        }
+        
+        .chat:hover{
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        right: 20px;
+        }
+
+        .carta-panel {
+    
+   
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          background-color: white;
+          
+          
+        }

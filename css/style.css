@@ -36,6 +36,16 @@ background-color: white;
     
   }
 
+
+  .carta-one-page-superiores {
+   
+    transition: 0.3s;
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 30px;
+    
+  }
+
   .carta-gradiente:hover {
     box-shadow: 2px 10px 16px 2px rgba(0, 0, 0, 0.2);
   }
@@ -45,6 +55,20 @@ background-color: white;
     /* transition: 0.3s; */
     padding: 20px;
     background-color: white;
+  }
+
+  .carta-one-page {
+    /* transition: 0.3s; */
+    padding: 20px;
+    background-color: white;
+  }
+
+  .card{
+      transition: 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 2px 10px 16px 2px rgba(0, 0, 0, 0.2);
   }
 
   .carta-forma-pago {
@@ -101,6 +125,7 @@ border-bottom:  0.08px solid rgb(207, 206, 206);
 body{
     background-color: rgb(241, 241, 241) !important;
     overflow-x: hidden !important;
+    width:100%;
 }
 
 .azul{
@@ -310,6 +335,10 @@ border: 0px solid #000000;
     color: orange !important;
   }
 
+  .hover-seleccion > div > span> a:hover{
+    color: orange !important;
+  }
+
   .filtros > div >span{
       cursor: pointer;
   }
@@ -378,3 +407,6 @@ border: 0px solid #000000;
       border-bottom: 2px solid #ddd;;
   }
 
+.imagen-producto-prueba{
+    width: 100%;
+}

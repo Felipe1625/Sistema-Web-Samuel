@@ -172,7 +172,7 @@ body{
 
 @media only screen and (max-width: 991px) {
     .ocultar-imagen{
-        display: none
+        display: none !important;
     }
    
         .ocultar-imagen-nosotros{

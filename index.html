@@ -26,13 +26,13 @@
     <a class="navbar-brand" href="#"><img src="Images/0.png" alt=""></a>
       <form class="mr-2 my-auto w-100 d-inline-block order-1">
           <div class="input-group">
-              <input type="text" class="form-control border border-right-0" placeholder="Buscar...">
+              <input id="input-busqueda" type="text" class="form-control border border-right-0" placeholder="Buscar...">
               <span class="input-group-append">
-                <a href="html/resultados_busqueda.html">
-                  <button class="btn btn-outline-light border border-left-0" type="button">
+                <!-- <a href="html/resultados_busqueda.html"> -->
+                  <button id="button-busqueda" class="btn btn-outline-light border border-left-0" type="button">
                       <i class="fa fa-search"></i>
                   </button>
-                </a>
+                <!-- </a> -->
                   
               </span>
           </div>
@@ -393,7 +393,13 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="Bootstrap/bootstrap.bundle.min.js"></script>
-
+  <script type="text/javascript">
+    document.getElementById("button-busqueda").onclick = function () {
+  if(document.getElementById("input-busqueda").value!=""){
+    location.href = "html/resultados_busqueda.html";
+  }
+    };
+</script>
 </body>
 
 

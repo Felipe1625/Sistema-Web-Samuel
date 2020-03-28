@@ -182,6 +182,12 @@ body{
         .centrar-list{
             text-align: center;
         }
+
+        .navbar-toggler {
+           
+            border-color: rgb(167, 167, 167) !important;
+            
+        }
       
 }
 

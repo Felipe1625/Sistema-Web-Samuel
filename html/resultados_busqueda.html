@@ -11,148 +11,303 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <!-- Navegador-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html"><img src="../Images/0.png" alt=""></a>
+    <!-- Navegador-->
+    <nav class="navbar navbar-expand-md  navbar-dark " style="background-color: rgb(167, 167, 167);">
+        <div class="d-flex flex-grow-1">
+            <a class="navbar-brand" href="../index.html"><img src="../Images/0.png" alt=""></a>
+            <form class="mr-2 my-auto w-100 d-inline-block order-1">
+                <div class="input-group">
+                    <input id="input-busqueda" type="text" class="form-control border border-right-0"
+                        placeholder="Buscar...">
+                    <span class="input-group-append">
+                        <!-- <a href="html/resultados_busqueda.html"> -->
+                        <button id="button-busqueda" class="btn btn-outline-light border border-left-0" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <!-- </a> -->
 
-        <div class="input-group mb-1 ancho">
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-            <div class="input-group-append">
-                <a href="../html/resultados_busqueda.html">
-                    <button type="button" class="btn btn-dark">Buscar</button>
-                </a>
-            </div>
+                    </span>
+                </div>
+            </form>
         </div>
-
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="navbar7">
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Categorías</a>
+                    <a class="nav-link" style="color: white !important;" href="#">Nosotros</a>
                 </li>
-
+                <li class="nav-item">
+                    <a style="color: white !important;" class="nav-link" href="#">Categorías</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: white !important;" class="nav-link" href="#">Contacto</a>
+                </li>
                 <li class="nav-item mr-5">
-                    <a class="nav-link" href="../html/login.html">Entrar</a>
+                    <a style="color: white !important;" class="nav-link" href="../html/login.html">Entrar</a>
                 </li>
             </ul>
-
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-3 todos_los_filtros text-left">
+    <div>
+        <div class="row carta-resultados-busquedas mt-3">
+            <div class="col-3  linea-divisoria">
                 <!-- Inicio de los filtros -->
-                <div class="filtro">
-                    <br>
-                    <span><b>Filtrar por rubro </b></span>
-                    <ul>
-                        <br>
-
-                        <li><input type="checkbox" value="Informática">
-                            <label>Informática</label>
-                        </li>
-                        <li><input type="checkbox" value="Hotelería">
-                            <label>Hotelería</label>
-                        </li>
-                        <li><input type="checkbox" value="Panadería">
-                            <label>Panadería</label>
-                        </li>
-                        <li><input type="checkbox" value="Restaurant">
-                            <label>Restaurant</label>
-                        </li>
-
-                    </ul>
+                <div class="filtros">
+                    <p class="titulo-filtros">Opinión media de los clientes</p>
+                    <div>
+                        <span class="estrella-hover">
+                            <span class="fa fa-star estrella-seleccionada"></span>
+                            <span class="fa fa-star estrella-seleccionada"></span>
+                            <span class="fa fa-star estrella-seleccionada"></span>
+                            <span class="fa fa-star estrella-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="letra-filtros">o más</span>
+                            </span>
+                    </div>
+                    
+                    <div>
+                        <span class="estrella-hover">
+                        <span class="fa fa-star estrella-seleccionada"></span>
+                        <span class="fa fa-star estrella-seleccionada"></span>
+                        <span class="fa fa-star estrella-seleccionada"></span>
+                        <span class="fa fa-star estrella-no-seleccionada"></span>
+                        <span class="fa fa-star estrella-no-seleccionada"></span>
+                        <span class="letra-filtros">o más</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="estrella-hover">
+                            <span class="fa fa-star estrella-seleccionada"></span>
+                            <span class="fa fa-star estrella-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="letra-filtros">o más</span>
+                        </span>
+                    </div>
+                    
+                    
+                    <div>
+                        <span class="estrella-hover">
+                            <span class="fa fa-star estrella-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="fa fa-star estrella-no-seleccionada"></span>
+                            <span class="letra-filtros">o más</span>
+                        </span>
+                    </div>
+                   
+                   
                 </div>
 
-                <div class="filtro">
-                    <br>
-                    <span><b>Filtrar por tipo </b></span>
-                    <ul>
-                        <br>
-
-                        <li><input type="checkbox" value="Servicio">
-                            <label>Servicio</label>
-                        </li>
-                        <li><input type="checkbox" value="Producto">
-                            <label>Producto</label>
-                        </li>
-                    </ul>
+                <div class="hover-seleccion">
+                    <p class="titulo-filtros">Tipo</p>
+                    <div>
+                        <span class="letra-filtros">Productos</span>
+                    </div>
+                    <div>
+                        <span class="letra-filtros">Servicios</span>
+                    </div>       
                 </div>
 
-                <div class="filtro">
-                    <br>
-                    <span><b>Filtrar por precio </b></span>
-                    <ul>
-                        <br>
 
-                        <li><input type="checkbox" value="Rango 1">
-                            <label>$0 - $50.000</label>
-                        </li>
-                        <li><input type="checkbox" value="Rango 2">
-                            <label>$50.000 - $100.000</label>
-                        </li>
-                        <li><input type="checkbox" value="Rango 3">
-                            <label>$100.000 - $300.000</label>
-                        </li>
-                        <li><input type="checkbox" value="Rango 4">
-                            <label>$300.000 - $500.000</label>
-                        </li>
-                        <li><input type="checkbox" value="Rango 5">
-                            <label>$500.000 - $1.000.000</label>
-                        </li>
-                        <li><input type="checkbox" value="Rango 6">
-                            <label>$1.000.000 o más</label>
-                        </li>
-                    </ul>
+                <div class="hover-seleccion">
+                    <p class="titulo-filtros">Precio</p>
+                    <div>
+                        <span class="letra-filtros">Hasta $30.000</span>
+                    </div>
+                    <div>
+                        <span class="letra-filtros">$30.000 - $50.000</span>
+                    </div>
+                    <div>
+                        <span class="letra-filtros">$50.000 - $100.000</span>
+                    </div>
+                    <div>
+                        <span class="letra-filtros">$100.000 - $300.000</span>
+                    </div>
+                    <div>
+                        <span class="letra-filtros">$300.000 - $500.000</span>
+                    </div>
+                    <div>
+                        <span class="letra-filtros">$500.000 - $1.000.000</span>
+                    </div>
+                    <div>
+                        <span class="letra-filtros">Más $1.000.000</span>
+                    </div>
+                   
+                </div>
+
+                <div class="hover-seleccion">
+                    <p class="titulo-filtros">Región</p>
+
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option >
+                        Región Metropolitana
+                    </option>
+                
+                    <option >
+                        XV Arica & Parinacota
+                    </option>
+                
+                    <option >
+                        I Tarapacá
+                    </option>
+                
+                    <option  >
+                        II Antofagasta
+                    </option>
+                
+                    <option  >
+                        III Atacama
+                    </option>
+                
+                    <option >
+                        IV Coquimbo
+                    </option>
+                
+                    <option  >
+                        V Valparaíso
+                    </option>
+                
+                    <option >
+                        VI O'Higgins
+                    </option>
+                
+                    <option >
+                        VII Maule
+                    </option>
+                
+                    <option  >
+                        XVI Ñuble
+                    </option>
+                
+                    <option >
+                        IX Araucanía
+                    </option>
+                
+                    <option >
+                        XIV Los Ríos
+                    </option>
+                
+                    <option >
+                        X Los Lagos
+                    </option>
+                
+                    <option  >
+                        XI Aisén
+                    </option>
+                
+                    <option  >
+                        XII Magallanes & Antártica
+                    </option>
+                  </select>
+                </div>
+
+                <div class="hover-seleccion">
+                    <p class="titulo-filtros">Rubro</p>
+
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option >
+                        Informática
+                    </option>
+                
+                    <option >
+                        Hoteleria 
+                    </option>
+                
+                    <option >
+                        Panaderia 
+                    </option>
+                
+                    <option  >
+                        Pasteleria
+                    </option>
+                
+                    <option  >
+                        Restaurant
+                    </option>
+                
+                    
+                  </select>
                 </div>
             </div> <!-- fin de los filtros-->
 
-            <div class="col-9 mt-5 mb-4 ">
-                <div class="carta">
+            <div class="col-9 mt-3 mb-4 ">
+                <div class="linea-inferior-resultados-busquedas">
                     <div class="row">
-                        <div class="col-8">
-                            <h5>Formateo de computadores</h5>
-                            <h5>PC System</h5>
-                            <a href="../html/productoDePrueba.html">  <button  type="button" class="btn btn-success">Detalles</button></a>
+                        <div class="col-sm-12 col-md-12 col-lg-4 imagen-en-carta">
+                            <img class="imagen-size" src="../Images/default-image.jpg">
                         </div>
-                        <div class="col-4 imagen-en-carta">
-
+                        <div class="col-sm-12 col-md-12 col-lg-8 ">
+                            <h5 class="margen-info-responsive">Formateo de computadores</h5>
+                            <h6 class="margen-info-responsive">PC System</h6>
+                            <div class="mb-2 margen-info-responsive">
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                </div>
+                            <a href="../html/productoDePrueba.html"> <button type="button"
+                                    class="btn btn-success margen-info-responsive">Detalles</button></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="carta">
+                <div class="linea-inferior-resultados-busquedas">
                     <div class="row">
-                        <div class="col-8">
-                            <h5>Habitaciones en Concepción</h5>
-                            <h5>Hotel La Rosalía</h5>
-                            <button type="button" class="btn btn-success">Detalles</button>
+                        <div class="col-sm-12 col-md-12 col-lg-4 imagen-en-carta">
+                            <img class="imagen-size" src="../Images/default-image.jpg">
                         </div>
-                        <div class="col-4 imagen-en-carta">
-
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <h5 class="margen-info-responsive">Habitaciones en Concepción</h5>
+                            <h6 class="margen-info-responsive">Hotel La Rosalía</h6>
+                            <div class="mb-2 margen-info-responsive">
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-no-seleccionada"></span>
+                                <span class="fa fa-star estrella-no-seleccionada"></span>
+                                <span class="fa fa-star estrella-no-seleccionada"></span>
+                                </div>
+                            <a href="../html/productoDePrueba.html"> <button type="button"
+                                    class="btn btn-success margen-info-responsive">Detalles</button></a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="carta">
-                    <div class="row">
-                        <div class="col-8">
-                            <h5>Venta de equipos computacionales</h5>
-                            <h5>Home CompuPC    </h5>
-                            <button type="button" class="btn btn-success">Detalles</button>
-                        </div>
-                        <div class="col-4 imagen-en-carta">
 
+                <div class="">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4 imagen-en-carta">
+                            <img class="imagen-size" src="../Images/default-image.jpg">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <h5 class="margen-info-responsive">Venta de equipos computacionales</h5>
+                            <h6 class="margen-info-responsive">Home CompuPC</h6>
+                            <div class="mb-2 margen-info-responsive">
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-seleccionada"></span>
+                                <span class="fa fa-star estrella-no-seleccionada"></span>
+                                <span class="fa fa-star estrella-no-seleccionada"></span>
+                                </div>
+                            <a href="../html/productoDePrueba.html"> <button type="button"
+                                    class="btn btn-success margen-info-responsive">Detalles</button></a>
                         </div>
                     </div>
                 </div>
@@ -163,13 +318,31 @@
 
 
     </div>
+    <!-- pie de pagina -->
+  <footer class="footerh">
+    <div class="row">
+      <div class="col-4">
+
+      </div>
+    </div>
+    <!-- <nav class="texto_derecha">
+      <a target="_blank" href="https://www.facebook.com">Encuentranos en Facebook</a>
+      <p>© 2020 Producto Chile. Todos los derechos reservados.</p>
+    </nav> -->
+  </footer>
     <!-- Archivos JS -->
     <script type="text/javascript" src="JS/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="Bootstrap/bootstrap.bundle.min.js"></script>
-
+    <script type="text/javascript">
+        document.getElementById("button-busqueda").onclick = function () {
+            if (document.getElementById("input-busqueda").value != "") {
+                location.href = "../html/resultados_busqueda.html";
+            }
+        };
+    </script>
 </body>
 
 </html>

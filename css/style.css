@@ -85,9 +85,8 @@ border-bottom:  0.08px solid rgb(207, 206, 206);
 
 
   .imagen-en-carta{
-    padding: 30px;
-    background-color: white;
-    border:1px solid red;
+    padding-bottom: 20px;
+    
   }
 
   .imagen-carta-categorias{
@@ -179,6 +178,17 @@ body{
         .ocultar-imagen-nosotros{
             display: none !important;
         }
+
+      
+}
+
+
+@media only screen and (min-width: 992px) {
+    
+    .margen-info-responsive{
+        margin-left: 70px !important;
+    }
+      
 }
 
 @media only screen and (max-width: 1250px) {
@@ -262,3 +272,99 @@ border: 0px solid #000000;
 .size-input{
     width: 100% !important;
 }
+
+.estrella-seleccionada {
+    color: orange;
+  }
+
+  .estrella-no-seleccionada{
+    color: rgb(196, 196, 196);
+  }
+
+  .estrella-hover:hover > :last-child{
+    color: orange;
+  }
+
+  .titulo-filtros{
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .letra-filtros{
+    font-size: 13px;
+    text-decoration: none !important;
+    color: black;
+  }
+
+
+  .hover-seleccion > div > span:hover{
+    color: orange !important;
+  }
+
+  .filtros > div >span{
+      cursor: pointer;
+  }
+
+  .hover-seleccion > div > span{
+    cursor: pointer;
+  }
+
+  .filtros > p{
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .hover-seleccion > p{
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .filtros{
+    margin-bottom: 10px !important;
+    padding-left: 5px;
+  }
+
+  .hover-seleccion{
+    margin-bottom: 10px !important;
+    padding-left: 5px;
+  }
+
+  select > option{
+    font-size: 13px;
+  }
+
+  select{
+    font-size: 13px !important;
+  }
+
+  .linea-divisoria{
+      border-right: 2px solid #ddd;
+  }
+
+  .carta-resultados-busquedas {
+    
+   
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: white;
+    
+    
+  }
+
+  .imagen-size{
+      width: 300px;
+      height: 200px;
+  }
+
+  .linea-inferior-resultados-busquedas{
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ddd;;
+  }
